@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clersky</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+
+    <div class="sprites" style="display: none;">
+        <symbol>
+            <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="facebook">
+                <path d="M10.6266 3.98062H13V0.168814C12.5905 0.116871 11.1823 0 9.54229 0C6.12032 0 3.77619 1.98482 3.77619 5.6328V8.99011H0V13.2514H3.77619V23.9736H8.40597V13.2524H12.0294L12.6046 8.99111H8.40488V6.05534C8.40597 4.82369 8.7656 3.98062 10.6266 3.98062Z" fill="#198C36" />
+            </svg>
+        </symbol>
+        <symbol>
+            <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="twitter">
+                <path d="M30 3.25392C28.8844 3.70514 27.6956 4.00423 26.4562 4.14945C27.7312 3.44754 28.7044 2.34456 29.1619 1.01509C27.9731 1.66859 26.6606 2.13018 25.2619 2.38778C24.1331 1.2796 22.5244 0.593262 20.7694 0.593262C17.3644 0.593262 14.6231 3.14154 14.6231 6.26552C14.6231 6.71502 14.6644 7.14722 14.7656 7.55868C9.6525 7.32875 5.12813 5.06918 2.08875 1.6271C1.55812 2.47595 1.24688 3.44754 1.24688 4.49348C1.24688 6.45742 2.34375 8.1983 3.97875 9.2062C2.99062 9.189 2.02125 8.9244 1.2 8.5078C1.2 8.5251 1.2 8.5476 1.2 8.57C1.2 11.3258 3.33187 13.6147 6.1275 14.142C5.62687 14.2682 5.08125 14.3287 4.515 14.3287C4.12125 14.3287 3.72375 14.308 3.35062 14.2319C4.1475 16.4777 6.40875 18.1287 9.0975 18.1823C7.005 19.6915 4.34812 20.6009 1.47188 20.6009C0.9675 20.6009 0.48375 20.5802 0 20.5231C2.72438 22.143 5.95312 23.0679 9.435 23.0679C20.7525 23.0679 26.94 14.4238 26.94 6.93112C26.94 6.68044 26.9306 6.43841 26.9175 6.1981C28.1381 5.39938 29.1637 4.40185 30 3.25392Z" fill="#198C36" />
+            </svg>
+        </symbol>
+        <symbol>
+            <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+                <path d="M25.6055 0H4.39453C1.97159 0 0 1.81788 0 4.05192V23.6092C0 25.8433 1.97159 27.6611 4.39453 27.6611H25.6055C28.0284 27.6611 30 25.8433 30 23.6092V4.05192C30 1.81788 28.0284 0 25.6055 0ZM10.6055 21.9344H7.08984V10.589H10.6055V21.9344ZM10.6055 8.96826H7.08984V5.72672H10.6055V8.96826ZM22.9102 21.9344H19.3945V15.4513C19.3945 14.5578 18.6058 13.8306 17.6367 13.8306C16.6676 13.8306 15.8789 14.5578 15.8789 15.4513V21.9344H12.3633V10.589H15.8789V11.2C16.7999 10.936 17.3982 10.589 18.5156 10.589C20.8999 10.5913 22.9102 12.5635 22.9102 14.8942V21.9344Z" fill="#198C36" />
+            </svg>
+        </symbol>
+        <symbol>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" id="inst">
+                <path d="M21.3379 0H3.66211C1.64299 0 0 1.64299 0 3.66211V21.3379C0 23.357 1.64299 25 3.66211 25H21.3379C23.357 25 25 23.357 25 21.3379V3.66211C25 1.64299 23.357 0 21.3379 0ZM12.5488 19.043C8.91399 19.043 5.95703 16.086 5.95703 12.4512C5.95703 8.81634 8.91399 5.85938 12.5488 5.85938C16.1837 5.85938 19.1406 8.81634 19.1406 12.4512C19.1406 16.086 16.1837 19.043 12.5488 19.043ZM19.873 7.32422C18.6615 7.32422 17.6758 6.3385 17.6758 5.12695C17.6758 3.91541 18.6615 2.92969 19.873 2.92969C21.0846 2.92969 22.0703 3.91541 22.0703 5.12695C22.0703 6.3385 21.0846 7.32422 19.873 7.32422Z" fill="#198C36" />
+                <path d="M19.873 4.39453C19.4689 4.39453 19.1406 4.72279 19.1406 5.12695C19.1406 5.53112 19.4689 5.85938 19.873 5.85938C20.2772 5.85938 20.6055 5.53112 20.6055 5.12695C20.6055 4.72279 20.2772 4.39453 19.873 4.39453Z" fill="#198C36" />
+                <path d="M12.5488 7.32422C9.72214 7.32422 7.42188 9.62448 7.42188 12.4512C7.42188 15.2779 9.72214 17.5781 12.5488 17.5781C15.3755 17.5781 17.6758 15.2779 17.6758 12.4512C17.6758 9.62448 15.3755 7.32422 12.5488 7.32422Z" fill="#198C36" />
+            </svg>
+
+        </symbol>
+    </div>
+
+    <section class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <img src="assets/imgs/logo.png" alt="" class="header__logo-img">
+                    </a>
+                </div>
+                <div class="header__assets">
+                    <span class="header__login link">
+                        Log In
+                    </span>
+                    <span class="header__number link">
+                        <a href="tel:844-332-6440" class="header__number-link">844-332-6440</a>
+                    </span>
+                    <button class="header__signin link">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home">
+        <div class="container">
+            <div class="home__inner">
+                <h1 class="home__title section__title global__title">
+                    Running the show has never been so easy.
+                </h1>
+                <p class="home__text section__text">
+                    Ready to put the human back in HR? Clerksy helps you set the stage with an inclusive and compliant workplace.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners__inner">
+                <div class="partners__item">
+                    <img src="assets/imgs/partersimg1.png" alt="Girl" class="partners__img global__img">
+                    <div class="partners__item__inner">
+                        <h2 class="partners__title global__title">
+                            Put the human back in HR.
+                        </h2>
+                        <p class="partners__text">Your employees are the real stars. Show the love and help them perform!</p>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <div class="partners__item__inner">
+                        <h2 class="partners__title partners__title-special global__title">
+                            You don’t have to play all the parts.
+                        </h2>
+                        <p class="partners__text">Sales, accounting, HR— Oh My! You can’t do it all - let Clerksy help.</p>
+                    </div>
+                    <img src="assets/imgs/partersimg2.png" alt="Girl" class="partners__img global__img">
+                </div>
+                <div class="partners__item partners-special">
+                    <h2 class="partners-special__title global__title">
+                        We partner with the best
+                    </h2>
+                    <div class="partners-special__multiplicity">
+                        <img src="assets/imgs/first-partner.png" alt="" class="partners-specials__img">
+                        <img src="assets/imgs/second-partner.png" alt="" class="partners-specials__img">
+                        <img src="assets/imgs/third-partner.png" alt="" class="partners-specials__img">
+                        <img src="assets/imgs/fourth-partner.png" alt="" class="partners-specials__img">
+                        <img src="assets/imgs/fifth-partner.png" alt="" class="partners-specials__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages__minor-div">
+            <div class="container">
+                <div class="advantages__inner">
+                    <div class="advantages__minor-div-inner">
+                        <h2 class="advantages__minor-div__title global__title">
+                            HR Production of the Highest Quality
+                        </h2>
+                        <div class="advantages__minor-div__s">
+                           <div class="advantages__minor-div__items">
+                               <div class="advantages__minor-div__item">
+                                   <img src="assets/imgs/advantages-1.png" alt="" class="advantages__minor-div__img">
+                                   <p class="advantages__minor-div__text">
+                                    Educates & Informs<br>
+                                    Employee Expectations
+                                </p>
+                               </div>
+                               <div class="advantages__minor-div__item">
+                                   <img src="assets/imgs/advantages-2.png" alt="" class="advantages__minor-div__img">
+                                   <p class="advantages__minor-div__text">
+                                    Protects Your Business<br>
+                                    Just in Case
+                                </p>
+                               </div>
+                               <div class="advantages__minor-div__item">
+                                   <img src="assets/imgs/advantages-3.png" alt="" class="advantages__minor-div__img">
+                                   <p class="advantages__minor-div__text">
+                                    Manages & Stores<br>
+                                    Important Documents
+                                </p>
+                               </div>
+                               <div class="advantages__minor-div__item">
+                                   <img src="assets/imgs/advantages-4.png" alt="" class="advantages__minor-div__img">
+                                   <p class="advantages__minor-div__text">
+                                    Create a Healthy<br>
+                                    Work Environment
+                                </p>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages__major-div">
+            <div class="container">
+                <div class="advantages__major-div__inner">
+                    <h2 class="advantages__major-div__title global__title">
+                        Employees come in all shapes and sizes. Find the right fit.
+                    </h2>
+                    <p class="advantages__major-div__text">
+                        Focus on casting and screening. Let Clerksy handle contracts, resolve any on set-conflicts and make sure you are compliant with work and safety boards.
+                    </p>
+                    <img src="assets/imgs/advantages-people.png" alt="" class="advantages__major-div__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info__inner">
+                <div class="info__top">
+                    <div class="info__texts">
+                        <h2 class="info__title global__title">
+                            How the scenes fit together
+                        </h2>
+                        <p class="info__text">
+                            Employee Training & Development, Diversity & Inclusion Programs, and Conflict Resolution.
+                        </p>
+                    </div>
+                    <img src="assets/imgs/info1.png" alt="" class="info__img global__img">
+                </div>
+                <div class="info__bottom">
+                    <h2 class="info__title special__title global__title">
+                        Consider everyone's best interest
+                    </h2>
+                    <p class="info__text">
+                        HR is for everyone. Clerksy can help you.
+                    </p>
+                    <div class="info__items">
+                        <div class="info__item">
+                            <img src="assets/imgs/info__item__img.png" alt="" class="info__item__img">
+                            <h3 class="info__item__title global__title">
+                                Protect Your <br>
+                                Company
+                            </h3>
+                            <ul class="info__item__list">
+                                <li class="info__item__li">
+                                    Compliance Audits & Training
+                                </li>
+                                <li class="info__item__li">
+                                    Employee Data Storage
+                                </li>
+                                <li class="info__item__li">
+                                    Policy Drafting
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__item">
+                            <img src="assets/imgs/info__item__img2.png" alt="" class="info__item__img">
+                            <h3 class="info__item__title global__title">
+                                Set Your Employees <br>
+                                Up For Success
+                            </h3>
+                            <ul class="info__item__list">
+                                <li class="info__item__li">
+                                    Learning & Development
+                                </li>
+                                <li class="info__item__li">
+                                    Employee Relations
+                                </li>
+                                <li class="info__item__li">
+                                    Benefit Management
+                                </li>
+                                <li class="info__item__li">
+                                    Employee Performance
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__item">
+                            <img src="assets/imgs/info__item__img3.png" alt="" class="info__item__img">
+                            <h3 class="info__item__title global__title">
+                                Know Your Industry's
+                                Legal Landscape
+                            </h3>
+                            <ul class="info__item__list">
+                                <li class="info__item__li">
+                                    Work Place Investigations
+                                </li>
+                                <li class="info__item__li">
+                                    Employee Mediations
+                                </li>
+                                <li class="info__item__li">
+                                    Performance Tracking
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="callback">
+        <div class="container">
+            <div class="callback__inner">
+                <h2 class="callback__title global__title">
+                    It's easy as 1, 2, 3
+                </h2>
+                <p class="callback__text">
+                    Clerksy can help use your unique business needs. Here's how:
+                </p>
+                <div class="callback__items">
+                    <div class="callback__item">
+                        <div class="callback__item__texts">
+                            <p class="callback__item__text">
+                                Fill out a form and tell us what <br>
+                                you're looking for:
+                            </p>
+                            <p class="callback__item__time">
+                                5 minutes
+                            </p>
+                        </div>
+                        <img src="assets/imgs/vector1.png" alt="" class="callback__item__img">
+                    </div>
+                    <div class="callback__item">
+                        <div class="callback__item__texts">
+                            <p class="callback__item__text">
+                                Time it will take a Clerksy rep <br>
+                                to follow up:
+                            </p>
+                            <p class="callback__item__time">
+                                24 hours
+                            </p>
+                        </div>
+                        <img src="assets/imgs/vector2.png" alt="" class="callback__item__img">
+                    </div>
+                    <div class="callback__item">
+                        <img src="assets/imgs/callback.png" alt="" class="callback__img">
+                    </div>
+                </div>
+
+                <button class="callback__btn green-btn">
+                    Book Free Discovery Call
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info__inner">
+                <div class="info__top">
+                    <div class="info__texts">
+                        <h2 class="info__title info__title-second global__title">
+                            Not just another HR resource.
+                        </h2>
+                        <p class="info__text">
+                            Simple. Entertaining. Informative.
+                        </p>
+                        <button class="info__btn green-btn">
+                            Download E-book
+                        </button>
+                    </div>
+                    <img src="assets/imgs/infosecond.png" alt="" class="info__img global__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="getstarted">
+        <div class="container">
+            <div class="getstarted__inner">
+                <h2 class="getstarted__title global__title">
+                    Get Started With Clerksy
+                </h2>
+                <p class="getstarted__text">
+                    Make sure your business puts people first.
+                </p>
+                <button class="getstarted__btn pink-btn">
+                    Book a Free Discovery Call
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign-up">
+        <div class="container">
+            <div class="sign-up__inner">
+                <div class="sign-up__passive">
+                    <h2 class="sign-up__title global__title">
+                        Stay up to date!
+                    </h2>
+                    <p class="sign-up__text">
+                        Sign up for the latest Clerksy news.
+                    </p>
+                </div>
+                <div class="sign-up__active">
+                    <form action="">
+                        <input type="text" class="sign-up__input">
+                        <button class="sign-up__btn" type="submit">
+                            Sign Up
+                        </button>
+                    </form>
+                    <p class="sign-up__active__text">
+                        By submitting your email you agree to receive updates about Clerksy. You can unsubscribe at any time. View our full
+                        <span class="sign-up__span">
+                            <a href="#" class="form__link">
+                                Privacy Policy
+                            </a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <img src="assets/imgs/footerlogo.png" alt="" class="footer__logo">
+                    <h2 class="footer__title global__title">
+                        A people company.
+                    </h2>
+                    <div class="footer__socials">
+                        <a href="https://uk-ua.facebook.com/" target="_blank">
+                            <svg class="footer__social">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a href="https://twitter.com/home" target="_blank">
+                            <svg class="footer__social">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <svg class="footer__social">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg class="footer__social">
+                                <use xlink:href="#inst"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__middle">
+                    <img src="assets/imgs/footerLine.png" alt="" class="footer__img">
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__c">
+                        <div class="footer__text">
+                            © 2020 Clerksy, Inc. Clerksy is a registered trademark of Clerksy, Inc.
+                        </div>
+                    </div>
+                    <div class="footer__links">
+                        <ul class="footer__list">
+                            <li>
+                                <a href="">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Terms of Service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    GDPR
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Careers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Press Kit
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
