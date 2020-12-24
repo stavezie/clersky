@@ -891,7 +891,7 @@ form {
     }
 
     .partners__title {
-        margin-right: 0 0 10px 0;
+        margin-right: 10px;
         font-size: 36px;
         max-width: 100%;
     }
