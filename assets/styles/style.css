@@ -899,5 +899,47 @@ form {
     }
 }
 
+@media screen and (max-width: 875px) {
+    .partners__item {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .partners__text,
+    .global__img {
+        margin: 0 0 25px 0;
+    }
+
+    .partners__title {
+        margin-right: 10px;
+        font-size: 36px;
+        max-width: 100%;
+    }
+
+    .partners__text {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .advantages__minor-div__items {
+        flex-wrap: wrap;
+    }
+
+    .advantages__minor-div__item {
+        width: 50%;
+        margin: 0;
+    }
+
+    .callback__items {
+        flex-direction: column;
+    }
+
+    .callback__item__img {
+        display: none;
+    }
+
+    .callback__item__texts {
+        margin: 0px;
+    }
+}
 
